@@ -87,6 +87,7 @@ line-height: 28px;
 .investment-container{
   display: flex;
   margin: 3rem;
+  gap: 1rem;
 }
 .investment-1{
   flex: 1;
@@ -99,7 +100,7 @@ line-height: 28px;
   border-left: #5500D4 solid 9px;
 }
 .investment-1 p{
-  line-height: 20px;
+  line-height: 40px;
 }
 .investment-2{
   flex: 1;
@@ -117,41 +118,45 @@ margin: 2rem;
    border-left: #5500D4 solid 9px;
 }
 .looking-cards{
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+display: flex;
+gap: 1rem;
 
 }
 .lookings-card{
+  flex: 1;
   position: relative;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 height: 142px;
 border-radius: 25px;
 padding-left: 10px;
-max-width: 95%;
+max-width: 288px;
 }
 .looking-card{
+   flex: 1;
   position: relative;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 height: 142px;
 border-radius: 25px;
 padding-left: 10px;
-width: 95%;
+max-width: 288px;
 }
 .booking-card{
+   flex: 1;
   position: relative;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 height: 142px;
 border-radius: 25px;
 padding-left: 10px;
-width: 95%;
+max-width: 288px;
 }
 .looging-card{
+   flex: 1;
   position: relative;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 height: 142px;
 border-radius: 25px;
 padding-left: 10px;
-width: 95%;
+max-width: 288px;
 }
 div{
  position: absolute;
@@ -160,6 +165,8 @@ div{
 .down{
   display: flex;
   margin-top: 1.5rem;
+  gap: 8rem;
+ 
 }
 .looking-button{
 margin-top: 1.5rem;
@@ -185,26 +192,24 @@ opacity: 0px;
 
 .intersect{
 margin-top: 1.1rem;
-
+align-self: flex-end;
+display: flex;
+position: relative;
+margin-left: ;
 }
-.intersect img{
+.intersect img {
   max-width: fit-content;
-  align-self: flex-end;
-  margin-left: 9rem;
- position: relative;
+  
+ 
 }
-.int{
- position: absolute;
-  width: 49.7px;
-height: 49.92px;
-top: 90px;
-left: 80px;
-}
-.int img{
+
+.int img {
    position: absolute;
   border: #5500D4 1px;
   width: 49.7px;
 height: 49.92px;
+left: 20px;
+bottom: 10px;
 }
 .latest-container{
  margin-top: 5rem;
@@ -217,10 +222,12 @@ height: 49.92px;
   margin-bottom: 2rem;
 }
 .latest-cards{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
 }
 .latest-card{
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -230,6 +237,17 @@ height: 49.92px;
   width: 95%;
 }
 .latests-card{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #F0EBF6;
+  border-radius: 30px;
+  width: 95%;
+}
+.lates-card{
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -375,10 +393,9 @@ padding-left: 2rem;
 .lookings-card{
   display: none;
 }
-.looking-cards{
-  grid-template-columns: repeat(3, 1fr);
+
  
-}
+
 .latest-card{
   width: 80%;
 }
@@ -389,32 +406,20 @@ padding-left: 2rem;
 }
 
 @media (max-width:970px){
-.looking-cards{
-  grid-template-columns: repeat(2, 1fr);
+
 }
-.intersect img{
-  margin-left: 18rem;
-}
-}
+
+
 @media (max-width:956px){
-.intersect img{
-  margin-left: 16rem;
-}
+
 }
 @media (max-width:895px){
-.looking-cards{
-  grid-template-rows: repeat(2, 1fr);
-}
+
 .booking-card{
   display: none;
 }
-.looging-card{
-  display: none;
-}
-.intersect img{
-  margin-left: 14rem;
 
-}
+
 .newsletter{
   display: none;
 }
@@ -429,4 +434,35 @@ padding-left: 2rem;
   .button-2{
     display: none;
   }
+  .looking-cards{
+    flex-direction: column;
+  }
+  .lookings-card{
+  display: block;
+}
+.booking-card{
+  display: block;
+}
+}
+@media (max-width:600px){
+  .lates-card{
+    display: none;
+  }
+  .latest-card{
+    margin: 2rem;
+  }
+  .right-contact{
+    display: none;
+  }
+  .logo-img{
+    display: none;
+  }
+}
+@media (max-width:570px){
+ .service-2{
+  display: none;
+ }
+ .investment-2{
+  display: none;
+ }
 }
