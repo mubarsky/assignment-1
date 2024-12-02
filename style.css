@@ -199,7 +199,7 @@ margin-left: ;
 }
 .intersect img {
   max-width: fit-content;
-  
+  margin-top: 3px;
  
 }
 
@@ -436,6 +436,7 @@ padding-left: 2rem;
   }
   .looking-cards{
     flex-direction: column;
+    align-items: center;
   }
   .lookings-card{
   display: block;
@@ -457,6 +458,11 @@ padding-left: 2rem;
   .logo-img{
     display: none;
   }
+  .service-1{
+    background-image:none;
+    height: calc(60vh - 3.8rem);
+  }
+
 }
 @media (max-width:570px){
  .service-2{
