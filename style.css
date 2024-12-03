@@ -30,6 +30,10 @@ cursor: pointer;
   border-radius: 10px ;
   color: white;
   cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+.bounteous-links button:hover{
+   transform: scale(1.1);
 }
 .service-container{
   display: flex;
@@ -69,6 +73,11 @@ line-height: 28px;
   color: #5500D4;
   border: none;
   cursor: pointer;
+    transition: all 200ms ease-in-out;
+    margin-right: 1rem;
+}
+.button-1:hover{
+  transform: scale(1.1);
 }
 .button-2{
    padding: 12px 15px;
@@ -76,7 +85,13 @@ line-height: 28px;
   background-color: #5500D4;
   border-radius: 10px ;
   color: white;
-    cursor: pointer;
+ cursor: pointer;
+transition: background-color 0.3s ease-in-out 0.2s;
+transition: all 200ms ease-in-out ;
+}
+.button-2:hover{
+ background-color: #7143b7;
+ transform: scale(1.1);
 }
 .service-2{
   flex: 1;
@@ -122,14 +137,19 @@ display: flex;
 gap: 1rem;
 
 }
+
 .lookings-card{
+  transition: 0.3s ease-in-out;
   flex: 1;
   position: relative;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 height: 142px;
 border-radius: 25px;
 padding-left: 10px;
-max-width: 288px;
+max-width: 288px
+}
+.lookings-card:hover{
+   transform: scale(0.9);
 }
 .looking-card{
    flex: 1;
@@ -139,6 +159,10 @@ height: 142px;
 border-radius: 25px;
 padding-left: 10px;
 max-width: 288px;
+transition: 0.3s ease-in-out;
+}
+.looking-card:hover{
+   transform: scale(0.9);
 }
 .booking-card{
    flex: 1;
@@ -148,6 +172,10 @@ height: 142px;
 border-radius: 25px;
 padding-left: 10px;
 max-width: 288px;
+transition: 0.3s ease-in-out;
+}
+.booking-card:hover{
+   transform: scale(0.9);
 }
 .looging-card{
    flex: 1;
@@ -157,6 +185,10 @@ height: 142px;
 border-radius: 25px;
 padding-left: 10px;
 max-width: 288px;
+transition: 0.3s ease-in-out;
+}
+.looging-card:hover{
+   transform: scale(0.9);
 }
 div{
  position: absolute;
@@ -225,6 +257,10 @@ bottom: 10px;
   display: flex;
   gap: 2rem;
   margin: 1rem;
+   transition: transform 0.3s ease-in-out;
+}
+.latest-cards :hover{
+transform: scale(1.01, 1.02);
 }
 .latest-card{
   flex: 1;
@@ -235,7 +271,10 @@ bottom: 10px;
   background-color: #F0EBF6;
   border-radius: 30px;
   width: 95%;
+ cursor: pointer;
 }
+
+
 .latests-card{
   flex: 1;
   display: flex;
@@ -245,6 +284,7 @@ bottom: 10px;
   background-color: #F0EBF6;
   border-radius: 30px;
   width: 95%;
+   cursor: pointer;
 }
 .lates-card{
   flex: 1;
@@ -255,6 +295,7 @@ bottom: 10px;
   background-color: #F0EBF6;
   border-radius: 30px;
   width: 95%;
+   cursor: pointer;
 }
 .l-img img {
   max-width: 100%;
@@ -298,6 +339,10 @@ gap: 2rem;
   border: #5500D4 1px solid;
   border-radius: 10px ;
   color: #5500D4;
+transition: all 200ms ease-in-out;
+}
+.left-contact button:hover{
+ transform: scale(1.1);
 }
 .right-contact{
 flex: 1;
@@ -360,6 +405,10 @@ padding: 12px 25px;
 border-radius: 10px;
 background-color:#656565;
 border: solid white;
+transition: all 200ms ease-in-out;
+}
+.input button:hover{
+  transform: scale(1.1);
 }
 
 .footer{
